@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RANDOM;</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+</head>
+<body>
+
+  <!-- Webcam -->
+  <video id="video" autoplay playsinline></video>
+
+  <!-- Drawing Canvas -->
+  <canvas id="drawCanvas"></canvas>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <h1>AIR drawing 4 u Madame Baby!</h1>
+
+    <div class="status">
+      <span id="modeText">Mode: Draw ☝</span>
+    </div>
+  </div>
+
+  <!-- Gesture Guide -->
+  <div class="guide">
+    Follow:<br>
+    ☝ Draw.................✌ Clear Canvas <br>
+    👍 Pink Brush........🤟 Blue Brush <br>
+    ✋ Random Color..✊ Pause <br>
+    HAVE FUN MADAME BABY!!!
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

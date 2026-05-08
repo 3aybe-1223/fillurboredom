@@ -1,0 +1,95 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    background:black;
+    font-family:Arial, sans-serif;
+}
+
+/* Webcam */
+
+video{
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    object-fit:cover;
+
+    transform:scaleX(-1);
+
+    z-index:1;
+}
+
+/* Canvas */
+
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:2;
+}
+
+/* Topbar */
+
+.topbar{
+    position:fixed;
+
+    top:20px;
+    left:20px;
+
+    z-index:10;
+
+    background:rgba(0, 255, 187, 0.5);
+
+    backdrop-filter:blur(50px);
+
+    padding:15px 25px;
+
+    border-radius:20px;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.topbar h1{
+    color:#000000;
+    margin-bottom:10px;
+}
+
+.status{
+    font-size:24px;
+}
+
+/* Guide */
+
+.guide{
+    position:fixed;
+
+    bottom:20px;
+    left:20%;
+
+    transform:translateX(-50%);
+
+    z-index:10;
+
+    color:white;
+
+    text-align:left;
+
+    background:rgba(0, 255, 187, 0.5);
+
+    padding:10px 50px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+    line-height:1.5;
+}
